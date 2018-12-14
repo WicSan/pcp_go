@@ -6,12 +6,12 @@ import (
 	"fmt"
 )
 
-func fibonacci() func() int {
-	f_1 := 0
-	f_2 := 1
-	return func() int {
-		f_2, f_1 = f_1, f_2+f_1
-		return f_2
+func fibonacci() func() int64 {
+	f1 := int64(0)
+	f2 := int64(1)
+	return func() int64 {
+		f2, f1 = f1, f2+f1
+		return f2
 	}
 }
 

@@ -1,16 +1,16 @@
 package main
 
 var a string
+var done bool
 
-func f() {
-    print(a)
-}
-
-func hello() {
+func setup() {
 	a = "hello, world"
-	go f()
+	done = true
 }
 
 func main() {
-	hello()
+	go setup()
+	for !done {
+	}
+	print(a)
 }

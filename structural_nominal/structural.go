@@ -10,7 +10,6 @@ type Person struct {
 	Age  int
 }
 
-//Wrap
 type SortByAge []Person
 
 func (s SortByAge) Len() int {

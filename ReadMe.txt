@@ -1,0 +1,18 @@
+1. 	Go f�r Windows herunterladen (MSI Installer)
+	https://golang.org/dl/
+
+2. 	�ffne den MSI Installer und befolge die Installationsanleitung
+	Per Default wird die Go Distribution in C:/Go gespeichert
+	
+3.	Der Installer sollte den C:\Go\bin Pfad auch als PATH Environment aufnehmen.
+	Restarte deine Powershell und teste die Installation mit:
+	> go version
+	
+	Output sollte etwa so aussehen
+	go version go1.9.2 windows/amd64
+
+4.  Zum ausführen der Beispiele kann im Terminal im jeweiligen Ordner go run {filename} 
+	benutzt werden.
+	
+*	Falls dies nicht der fall ist muss C:\Go\bin der PATH Environment hinzugef�gt werden.
+(von https://github.com/Che4ter/pcp-go)
